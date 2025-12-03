@@ -31,25 +31,6 @@
 
 ## 📁 Project Structure
 
-- `index.html`: หน้า Landing Page หลักของเว็บไซต์
 - `design-system.html`: หน้าเอกสารรวม Components และ Tokens ทั้งหมด
 - `assets/style/input.css`: ไฟล์ตั้งค่า Tailwind v4 และ Custom Styles
 - `assets/style/index.css`: ไฟล์ CSS ที่ผ่านการ Compile แล้ว
-
-## 🚀 Getting Started
-
-1. **Install Dependencies**
-
-   ```bash
-   npm install
-   ```
-
-2. **Run Tailwind CLI (Watch Mode)**
-   คำสั่งสำหรับ Compile CSS แบบ Real-time ขณะแก้ไขโค้ด
-
-   ```bash
-   npx @tailwindcss/cli -i ./assets/style/input.css -o ./assets/style/index.css --watch
-   ```
-
-3. **Open Website**
-   เปิดไฟล์ `index.html` ใน Browser เพื่อดูผลลัพธ์
