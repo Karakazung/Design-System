@@ -1,0 +1,17 @@
+body { font-family: 'Prompt', sans-serif; }
+.custom-scrollbar::-webkit-scrollbar { width: 5px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 20px; }
+.sticky-nav { position: sticky; top: 1rem; max-height: calc(100vh - 4rem); overflow-y: auto; }
+
+/* Code Viewer Utilities */
+.code-block { background-color: #0F172A; color: #E2E8F0; padding: 1.5rem; border-radius: 0.75rem; font-family: 'Monaco', 'Consolas', monospace; font-size: 0.8rem; line-height: 1.5; overflow-x: auto; white-space: pre-wrap; display: none; }
+.code-block.active { display: block; }
+.preview-area.hidden { display: none; }
+.view-toggle { display: inline-flex; background: #F1F5F9; border-radius: 8px; padding: 4px; position: relative; border: 1px solid #E2E8F0; }
+.view-toggle button { padding: 6px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; transition: all 0.2s; color: #64748B; display: flex; align-items: center; gap: 6px; }
+.view-toggle button.active { background: #FFFFFF; color: #0F172A; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+
+/* Card Tab Curve */
+.card-type-tab { position: absolute; bottom: 0; left: 0; background: white; padding: 8px 24px 8px 24px; border-top-right-radius: 20px; z-index: 10; font-weight: 600; color: #0F172A; }
+.card-type-tab::before { content: ''; position: absolute; right: -20px; bottom: 0; width: 20px; height: 20px; background: transparent; box-shadow: -10px 10px 0 white; border-bottom-left-radius: 50%; pointer-events: none; }
